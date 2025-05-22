@@ -1,0 +1,29 @@
+{
+  "name": "C Dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "version": "0.2",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.fontSize": 15,
+        "[c]": {
+          "editor.defaultFormatter": "ms-vscode.cpptools"
+        }
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "eamodio.gitlens",
+        "github.copilot",
+        "github.copilot-chat"
+      ]
+    }
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y build-essential cmake"
+}

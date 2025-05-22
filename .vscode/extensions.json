@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "reditorsupport.r",
+    "Posit.air-vscode",
+    "ms-toolsai.jupyter",
+    "eamodio.gitlens",
+    "github.copilot",
+    "github.copilot-chat",
+    "tonybaloney.vscode-pets",
+    "ms-vscode.cpptools"
+  ],
+  "unwantedRecommendations": []
+}
